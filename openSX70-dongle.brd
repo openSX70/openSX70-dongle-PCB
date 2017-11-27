@@ -2307,7 +2307,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 </signals>
 <errors>
-<approved hash="3,1,0aa3d93f0fcfdc53"/>
 <approved hash="3,1,1b7f28e3fe93cd0f"/>
 <approved hash="3,16,f67fa36774992181"/>
 <approved hash="4,1,74b5f2590704e0e1"/>

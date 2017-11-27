@@ -6083,39 +6083,6 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -6519,6 +6486,41 @@ DIN A4, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26990/1" library_version="2">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:27037/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="GND" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6543,29 +6545,29 @@ DIN A4, landscape with extra doc field</description>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="220R"/>
 <part name="SW1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="SW-C16" device="" package3d_urn="urn:adsk.eagle:package:26665/1"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
-<part name="GND-ISO1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND-ISO2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND-ISO5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND-ISO1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="SWITCH-SPDT" device="-SMD-RIGHT-ANGLE" package3d_urn="urn:adsk.eagle:package:40179/1"/>
 <part name="S2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="SWITCH-SPDT" device="-SMD-RIGHT-ANGLE" package3d_urn="urn:adsk.eagle:package:40179/1"/>
-<part name="GND-ISO7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND-ISO8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND-ISO8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="OK1" library="openSX70" deviceset="TLP127" device="" value="TLP127"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="220R"/>
-<part name="GND-ISO10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND-ISO10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="_PTH"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="GND-ISO3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND-ISO3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="TP+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="TP-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="TP-I/O" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
-<part name="GND" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND-ISO4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="GND-ISO6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="GND-ISO11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="GND-ISO12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6583,35 +6585,35 @@ DIN A4, landscape with extra doc field</description>
 <instance part="R4" gate="G$1" x="167.64" y="104.14" rot="R180"/>
 <instance part="R5" gate="G$1" x="172.72" y="93.98" rot="R180"/>
 <instance part="R6" gate="G$1" x="109.22" y="55.88" rot="R270"/>
-<instance part="R7" gate="G$1" x="160.02" y="48.26" rot="R270"/>
-<instance part="R8" gate="G$1" x="160.02" y="63.5" rot="R270"/>
+<instance part="R7" gate="G$1" x="160.02" y="43.18" rot="R270"/>
+<instance part="R8" gate="G$1" x="172.72" y="63.5" rot="R270"/>
 <instance part="R9" gate="G$1" x="101.6" y="35.56" rot="R180"/>
 <instance part="SW1" gate="G$1" x="134.62" y="137.16" rot="R270"/>
 <instance part="SUPPLY4" gate="G$1" x="134.62" y="144.78"/>
-<instance part="GND-ISO1" gate="1" x="109.22" y="71.12"/>
-<instance part="GND-ISO2" gate="1" x="99.06" y="116.84" rot="R270"/>
-<instance part="GND-ISO5" gate="1" x="180.34" y="93.98" rot="R90"/>
-<instance part="S1" gate="1" x="167.64" y="68.58"/>
-<instance part="S2" gate="1" x="167.64" y="53.34"/>
-<instance part="GND-ISO7" gate="1" x="160.02" y="40.64"/>
-<instance part="GND-ISO8" gate="1" x="160.02" y="58.42"/>
-<instance part="SUPPLY5" gate="G$1" x="172.72" y="71.12" rot="R270"/>
-<instance part="SUPPLY6" gate="G$1" x="172.72" y="55.88" rot="R270"/>
+<instance part="GND-ISO1" gate="GND" x="109.22" y="71.12"/>
+<instance part="S1" gate="1" x="180.34" y="68.58"/>
+<instance part="S2" gate="1" x="167.64" y="48.26"/>
+<instance part="GND-ISO8" gate="GND" x="193.04" y="58.42" rot="R90"/>
+<instance part="SUPPLY5" gate="G$1" x="190.5" y="71.12" rot="R270"/>
+<instance part="SUPPLY6" gate="G$1" x="190.5" y="50.8" rot="R270"/>
 <instance part="LED1" gate="G$1" x="91.44" y="35.56" rot="MR270"/>
 <instance part="SUPPLY7" gate="G$1" x="96.52" y="48.26" rot="R270"/>
-<instance part="OK1" gate="G$1" x="81.28" y="50.8" rot="R180"/>
+<instance part="OK1" gate="G$1" x="78.74" y="50.8" rot="R180"/>
 <instance part="R12" gate="G$1" x="93.98" y="53.34" rot="R180"/>
-<instance part="GND-ISO10" gate="1" x="109.22" y="48.26"/>
+<instance part="GND-ISO10" gate="GND" x="109.22" y="48.26"/>
 <instance part="R13" gate="G$1" x="119.38" y="35.56"/>
 <instance part="SUPPLY8" gate="G$1" x="86.36" y="35.56" rot="R90"/>
-<instance part="J1" gate="G$1" x="55.88" y="50.8"/>
+<instance part="J1" gate="G$1" x="48.26" y="50.8"/>
 <instance part="FRAME1" gate="G$1" x="-7.62" y="-15.24"/>
 <instance part="FRAME1" gate="G$2" x="154.94" y="-15.24"/>
-<instance part="GND-ISO3" gate="1" x="127" y="35.56" rot="R90"/>
+<instance part="GND-ISO3" gate="GND" x="127" y="35.56" rot="R90"/>
 <instance part="TP+" gate="1" x="99.06" y="99.06" rot="R270"/>
 <instance part="TP-" gate="1" x="76.2" y="127" rot="R270"/>
 <instance part="TP-I/O" gate="1" x="99.06" y="88.9" rot="R270"/>
-<instance part="GND" gate="1" x="76.2" y="116.84"/>
+<instance part="GND-ISO4" gate="GND" x="76.2" y="116.84"/>
+<instance part="GND-ISO6" gate="GND" x="193.04" y="38.1" rot="R90"/>
+<instance part="GND-ISO11" gate="GND" x="96.52" y="116.84" rot="R270"/>
+<instance part="GND-ISO12" gate="GND" x="185.42" y="93.98" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6625,10 +6627,12 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="S1" gate="1" pin="O"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<wire x1="190.5" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="O"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+<wire x1="172.72" y1="50.8" x2="190.5" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -6656,7 +6660,7 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="OK1" gate="G$1" pin="A"/>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
-<wire x1="91.44" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
@@ -6719,14 +6723,80 @@ DIN A4, landscape with extra doc field</description>
 <junction x="162.56" y="104.14"/>
 </segment>
 </net>
-<net name="GND-ISO" class="0">
+<net name="N$6" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="GND-ISO2" gate="1" pin="GND"/>
+<pinref part="DS2408" gate="G$1" pin="P4"/>
+<pinref part="S1" gate="1" pin="P"/>
+<wire x1="154.94" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
+<junction x="172.72" y="68.58"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="DS2408" gate="G$1" pin="P5"/>
+<pinref part="S2" gate="1" pin="P"/>
+<wire x1="154.94" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="53.34" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
+<junction x="160.02" y="48.26"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="OK1" gate="G$1" pin="C"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="TIP"/>
+<pinref part="OK1" gate="G$1" pin="COL"/>
+<wire x1="53.34" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="45.72" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="OK1" gate="G$1" pin="EMIT"/>
+<pinref part="J1" gate="G$1" pin="RING"/>
+<wire x1="53.34" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="DS2408" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="63.5" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="76.2" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="GND-ISO1" gate="GND" pin="GND"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<junction x="109.22" y="76.2"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="GND-ISO10" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="GND-ISO3" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TP-" gate="1" pin="P"/>
+<wire x1="76.2" y1="124.46" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GND-ISO4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND-ISO6" gate="GND" pin="GND"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="GND-ISO5" gate="1" pin="GND"/>
 <pinref part="DS2408" gate="G$1" pin="P3"/>
 <wire x1="154.94" y1="76.2" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="76.2" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
@@ -6745,79 +6815,19 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="177.8" y1="114.3" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="104.14" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 <junction x="177.8" y="104.14"/>
+<pinref part="GND-ISO12" gate="GND" pin="GND"/>
+<wire x1="177.8" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
 <junction x="177.8" y="93.98"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="GND-ISO7" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="DS2408" gate="G$1" pin="P4"/>
-<pinref part="S1" gate="1" pin="P"/>
-<wire x1="154.94" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
-<junction x="160.02" y="68.58"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="DS2408" gate="G$1" pin="P5"/>
-<pinref part="S2" gate="1" pin="P"/>
-<wire x1="154.94" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
-<junction x="160.02" y="53.34"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="OK1" gate="G$1" pin="C"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="TIP"/>
-<pinref part="OK1" gate="G$1" pin="COL"/>
-<wire x1="60.96" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="45.72" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="OK1" gate="G$1" pin="EMIT"/>
-<pinref part="J1" gate="G$1" pin="RING"/>
-<wire x1="60.96" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="DS2408" gate="G$1" pin="GND"/>
-<wire x1="101.6" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="63.5" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="76.2" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="GND-ISO1" gate="1" pin="GND"/>
-<wire x1="109.22" y1="73.66" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
-<junction x="109.22" y="76.2"/>
+<pinref part="GND-ISO11" gate="GND" pin="GND"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="116.84" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="GND-ISO10" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="GND-ISO3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="TP-" gate="1" pin="P"/>
-<pinref part="GND" gate="1" pin="GND"/>
-<wire x1="76.2" y1="124.46" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="GND-ISO8" gate="GND" pin="GND"/>
+<wire x1="172.72" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
