@@ -6555,12 +6555,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="OPTO" library="openSX70" deviceset="TLP127" device="" value="TLP127"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="220R"/>
-<part name="GND-ISO10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="PC-FLASH" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="_PTH"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="GND-ISO3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="TP+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="TP-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="TP_I/O" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
@@ -6568,6 +6566,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND-ISO6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND-ISO11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND-ISO12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6600,13 +6600,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY7" gate="G$1" x="96.52" y="48.26" rot="R270"/>
 <instance part="OPTO" gate="G$1" x="78.74" y="50.8" rot="R180"/>
 <instance part="R12" gate="G$1" x="93.98" y="53.34" rot="R180"/>
-<instance part="GND-ISO10" gate="GND" x="109.22" y="48.26"/>
 <instance part="R13" gate="G$1" x="119.38" y="35.56"/>
 <instance part="SUPPLY8" gate="G$1" x="86.36" y="35.56" rot="R90"/>
 <instance part="PC-FLASH" gate="G$1" x="48.26" y="50.8"/>
 <instance part="FRAME1" gate="G$1" x="-7.62" y="-15.24"/>
 <instance part="FRAME1" gate="G$2" x="154.94" y="-15.24"/>
-<instance part="GND-ISO3" gate="GND" x="127" y="35.56" rot="R90"/>
 <instance part="TP+" gate="1" x="99.06" y="99.06" rot="R270"/>
 <instance part="TP-" gate="1" x="76.2" y="127" rot="R270"/>
 <instance part="TP_I/O" gate="1" x="99.06" y="88.9" rot="R270"/>
@@ -6614,6 +6612,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND-ISO6" gate="GND" x="193.04" y="38.1" rot="R90"/>
 <instance part="GND-ISO11" gate="GND" x="96.52" y="116.84" rot="R270"/>
 <instance part="GND-ISO12" gate="GND" x="228.6" y="104.14" rot="R90"/>
+<instance part="SUPPLY2" gate="G$1" x="127" y="35.56" rot="R270"/>
+<instance part="SUPPLY3" gate="G$1" x="109.22" y="48.26" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6666,6 +6666,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="86.36" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="124.46" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6778,14 +6788,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="GND-ISO1" gate="GND" pin="GND"/>
 <wire x1="109.22" y1="73.66" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
 <junction x="109.22" y="76.2"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="GND-ISO10" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="GND-ISO3" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="TP-" gate="1" pin="P"/>
