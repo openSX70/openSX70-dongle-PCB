@@ -160,6 +160,7 @@
 <text x="15.6845" y="7.493" size="0.6096" layer="25">GND</text>
 <text x="28.321" y="7.62" size="0.6096" layer="25">VCC</text>
 <text x="19.7485" y="7.4295" size="0.6096" layer="25">1-W</text>
+<text x="45.085" y="16.51" size="3.556" layer="22" font="vector" ratio="9" rot="MR0">www.openSX70.com</text>
 </plain>
 <libraries>
 <library name="DS2408-joaco">
