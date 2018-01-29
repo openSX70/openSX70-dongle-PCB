@@ -9799,7 +9799,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="220R"/>
@@ -9811,7 +9810,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM"/>
 <part name="OPTO" library="openSX70" deviceset="TLP127" device="" value="TLP127"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="220R"/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100K"/>
 <part name="PC-FLASH" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="_PTH"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
 <part name="TP-2.8V" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
@@ -9845,7 +9843,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R3" gate="G$1" x="208.28" y="119.38" rot="R180"/>
 <instance part="R4" gate="G$1" x="208.28" y="104.14" rot="R180"/>
 <instance part="R5" gate="G$1" x="208.28" y="88.9" rot="R180"/>
-<instance part="R6" gate="G$1" x="109.22" y="55.88" rot="R270"/>
 <instance part="R7" gate="G$1" x="160.02" y="43.18" rot="R270"/>
 <instance part="R8" gate="G$1" x="172.72" y="63.5" rot="R270"/>
 <instance part="R9" gate="G$1" x="101.6" y="35.56" rot="R180"/>
@@ -9857,7 +9854,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="LED1" gate="G$1" x="91.44" y="35.56" rot="MR270"/>
 <instance part="OPTO" gate="G$1" x="78.74" y="50.8" rot="R180"/>
 <instance part="R12" gate="G$1" x="93.98" y="53.34" rot="R180"/>
-<instance part="R13" gate="G$1" x="119.38" y="35.56"/>
 <instance part="PC-FLASH" gate="G$1" x="48.26" y="50.8"/>
 <instance part="FRAME1" gate="G$1" x="-7.62" y="-15.24"/>
 <instance part="FRAME1" gate="G$2" x="154.94" y="-15.24"/>
@@ -10069,10 +10065,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="99.06" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="53.34" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="DS2408" gate="G$1" pin="P7"/>
-<wire x1="104.14" y1="60.96" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
-<junction x="109.22" y="60.96"/>
+<wire x1="104.14" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10087,8 +10080,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="114.3" y1="53.34" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<junction x="114.3" y="35.56"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -10138,9 +10129,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="86.36" y="38.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
-<label x="129.54" y="38.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="OPTO" gate="G$1" pin="A"/>
@@ -10163,9 +10152,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="195.58" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="50.8" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
-<label x="104.14" y="43.18" size="1.778" layer="95"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="43.18" width="0.1524" layer="91" curve="-124.850897"/>
 </segment>
 </net>
 </nets>
