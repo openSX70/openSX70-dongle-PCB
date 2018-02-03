@@ -10129,9 +10129,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="86.36" y="38.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="OPTO" gate="G$1" pin="A"/>
 <wire x1="88.9" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
 <label x="99.06" y="45.72" size="1.778" layer="95"/>
@@ -10150,9 +10147,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="S2" gate="1" pin="O"/>
 <wire x1="172.72" y1="50.8" x2="198.12" y2="50.8" width="0.1524" layer="91"/>
 <label x="195.58" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="109.22" y1="50.8" x2="109.22" y2="43.18" width="0.1524" layer="91" curve="-124.850897"/>
 </segment>
 </net>
 </nets>
