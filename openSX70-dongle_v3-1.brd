@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -170,7 +170,7 @@
 <board>
 <plain>
 <wire x1="35.938" y1="7.62" x2="36.0426" y2="7.747" width="0.001" layer="20"/>
-<text x="48.4378" y="17.9959" size="1.27" layer="1" font="vector" ratio="12" rot="R90">top</text>
+<text x="48.4378" y="16.7259" size="1.27" layer="1" font="vector" ratio="12" rot="R90">top</text>
 <text x="8.89" y="11.43" size="1.27" layer="16" font="vector" ratio="12" rot="MR0">bottom</text>
 <text x="34.6075" y="4.445" size="1.27" layer="16" font="vector" ratio="12" rot="MR0">openSX70 dongle 2.8</text>
 <text x="34.925" y="8.255" size="1.27" layer="21" font="vector">20180128 v.3.1</text>
@@ -2459,33 +2459,6 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="4,1,9dcd38a71b93dcfa"/>
-<approved hash="4,1,e868b188773f20ab"/>
-<approved hash="4,16,e868b188773f20ab"/>
-<approved hash="4,1,05cd90a7db921cf8"/>
-<approved hash="4,1,07d296bb5f8f20fa"/>
-<approved hash="4,1,9fcd06a7279358fe"/>
-<approved hash="4,1,ed7c888a353ed2b8"/>
-<approved hash="4,16,ed7c888a353ed2b8"/>
-<approved hash="4,1,4f63fa8b013d92a6"/>
-<approved hash="4,16,4f63fa8b013d92a6"/>
-<approved hash="4,1,225e6387273e5490"/>
-<approved hash="4,16,225e6387273e5490"/>
-<approved hash="4,1,b55bada3574066b6"/>
-<approved hash="4,16,b55bada3574066b6"/>
-<approved hash="4,1,99259b9136a7c613"/>
-<approved hash="4,1,a8d5a822d06b70b1"/>
-<approved hash="4,1,9923a7971aa4ca10"/>
-<approved hash="4,1,b825789029a32717"/>
-<approved hash="4,1,f124b1913ea53811"/>
-<approved hash="4,1,8627e0935ba71b10"/>
-<approved hash="4,1,9024909139a53b11"/>
-<approved hash="4,1,c6a664e51230b841"/>
-<approved hash="4,1,897fa29176097a12"/>
-<approved hash="4,1,5bef1aca13cc0101"/>
-<approved hash="3,16,6a8b697b692a6ada"/>
-<approved hash="3,1,6a9e696e6aa56955"/>
-<approved hash="3,1,714977444591439c"/>
 <approved hash="3,16,d7c3cc3a1a1801e1"/>
 <approved hash="3,16,d46a5f810965828e"/>
 <approved hash="3,1,2cb0e8c0e8f22c82"/>
