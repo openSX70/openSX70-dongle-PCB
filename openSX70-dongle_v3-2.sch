@@ -9832,7 +9832,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <sheet>
 <plain>
 <text x="165.1" y="10.16" size="6.4516" layer="91">openSX70 dongle</text>
-<text x="244.856" y="-9.398" size="5.08" layer="97">3.1</text>
+<text x="244.856" y="-9.398" size="5.08" layer="97">3.2</text>
 </plain>
 <instances>
 <instance part="DS2408" gate="G$1" x="134.62" y="78.74"/>

@@ -29,11 +29,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,11 +47,11 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -169,16 +169,16 @@
 </layers>
 <board>
 <plain>
-<wire x1="35.938" y1="7.62" x2="36.0426" y2="7.747" width="0.001" layer="20"/>
+<wire x1="35.938" y1="7.62" x2="35.9156" y2="7.747" width="0.001" layer="20"/>
 <text x="48.4378" y="15.4559" size="1.27" layer="1" font="vector" ratio="12" rot="R90">top</text>
 <text x="8.89" y="11.43" size="1.27" layer="16" font="vector" ratio="12" rot="MR0">bottom</text>
 <text x="34.6075" y="4.445" size="1.27" layer="16" font="vector" ratio="12" rot="MR0">openSX70 dongle 3.2</text>
 <text x="34.925" y="8.255" size="1.27" layer="21" font="vector">20180228 v.3.2</text>
-<wire x1="2.0955" y1="7.747" x2="15.2654" y2="7.747" width="0.1524" layer="20"/>
-<wire x1="15.2654" y1="7.747" x2="15.2654" y2="0.9398" width="0.1524" layer="20"/>
-<wire x1="15.2654" y1="0.9398" x2="36.0426" y2="0.9398" width="0.1524" layer="20"/>
-<wire x1="36.0426" y1="0.9398" x2="36.0426" y2="7.747" width="0.1524" layer="20"/>
-<wire x1="36.0426" y1="7.747" x2="49.2125" y2="7.747" width="0.1524" layer="20"/>
+<wire x1="2.0955" y1="7.747" x2="15.3924" y2="7.747" width="0.1524" layer="20"/>
+<wire x1="15.3924" y1="7.747" x2="15.3924" y2="0.9398" width="0.1524" layer="20"/>
+<wire x1="15.3924" y1="0.9398" x2="35.9156" y2="0.9398" width="0.1524" layer="20"/>
+<wire x1="35.9156" y1="0.9398" x2="35.9156" y2="7.747" width="0.1524" layer="20"/>
+<wire x1="35.9156" y1="7.747" x2="49.2125" y2="7.747" width="0.1524" layer="20"/>
 <wire x1="49.2125" y1="7.747" x2="49.2125" y2="25.654" width="0.1524" layer="20"/>
 <wire x1="49.2125" y1="25.654" x2="2.0955" y2="25.654" width="0.1524" layer="20"/>
 <wire x1="2.0955" y1="25.654" x2="2.0955" y2="7.747" width="0.1524" layer="20"/>
@@ -199,6 +199,7 @@ SELECTOR</text>
 <text x="25.5331" y="10.9107" size="0.6096" layer="25" font="vector">N/C</text>
 <text x="20.32" y="15.24" size="0.8128" layer="21" font="vector" ratio="20">+</text>
 <text x="33.7312" y="8.8138" size="0.8128" layer="21" font="vector" ratio="20">+</text>
+<dimension x1="15.3924" y1="0.9398" x2="35.9156" y2="0.9398" x3="25.654" y3="-3.81" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="DS2408-joaco">
@@ -2463,12 +2464,8 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="4,1,b21d0926fcdd2e92"/>
 <approved hash="4,1,7713eddc60dc1c19"/>
-<approved hash="4,1,e1197c957b600982"/>
 <approved hash="4,1,3b420927825fd046"/>
-<approved hash="4,1,11905f3856409094"/>
-<approved hash="4,1,eae9f9b7a25f516c"/>
 <approved hash="4,1,00364f5f565c89b2"/>
 <approved hash="4,1,0b1c809fa45e1798"/>
 <approved hash="4,1,f05bbc1f1458a858"/>
@@ -2493,8 +2490,12 @@ design rules under a new name.</description>
 <approved hash="3,16,2cb0e8c0e8f22c82"/>
 <approved hash="4,1,d604ecf8e3cac748"/>
 <approved hash="4,1,2bb2a938814f81fd"/>
-<approved hash="4,16,864e71f72e1572da"/>
-<approved hash="4,16,68325cdafb8f71d3"/>
+<approved hash="4,1,1a650f5ad1289e26"/>
+<approved hash="4,1,2ddc6866fcddb152"/>
+<approved hash="4,1,e11eddd2e427a8c2"/>
+<approved hash="4,1,ccbd94912ad8aed0"/>
+<approved hash="4,16,0049dc6a2d6d6084"/>
+<approved hash="4,16,cf733e1b1c48dc4f"/>
 </errors>
 </board>
 </drawing>
