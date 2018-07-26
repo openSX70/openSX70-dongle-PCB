@@ -501,6 +501,10 @@ SELECTOR</text>
 <text x="3" y="0" size="1.27" layer="21" font="vector" rot="SR270">4</text>
 <text x="-3" y="-0.5" size="1.27" layer="21" font="vector" rot="R90">C</text>
 </package>
+<package name="SX70-S-PAD2">
+<smd name="P$1" x="0.01" y="0.087" dx="2.413" dy="1.143" layer="1"/>
+<text x="-0.762" y="0.254" size="0.3048" layer="21" ratio="4">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="wirepad" urn="urn:adsk.eagle:library:412">
@@ -1035,27 +1039,29 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1216979" x="-20.3" y="37.96" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-20.3" y="37.96" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
+<element name="VCC" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-20.3"/>
+<element name="1-WIRE" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-22.1"/>
+<element name="GND" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-23.9"/>
+<element name="1-WIRE-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-25.7"/>
+<element name="GND-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-27.5"/>
+<element name="2.8V-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-34.7"/>
+<element name="VCC-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-36.5"/>
+<element name="LED-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-38.3"/>
+<element name="2.8V-V" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-40.1"/>
+<element name="S1-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-41.9"/>
+<element name="S2-H" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-43.7"/>
+<element name="S1-V" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-45.5"/>
+<element name="S2-V" library="openSX70" package="SX70-S-PAD2" value="SX70-S-PAD-NEW" x="-21.5" y="-47.3"/>
 </elements>
 <signals>
-<signal name="VCC">
-<contactref element="U$1" pad="P$6"/>
-<contactref element="REG" pad="1"/>
-<contactref element="REG" pad="3"/>
-<contactref element="TP+6V" pad="1"/>
-<contactref element="C1" pad="1"/>
-<wire x1="25.4225" y1="43.2392" x2="20.7996" y2="42.9968" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4225" y1="41.3392" x2="25.4225" y2="43.2392" width="0" layer="19" extent="1-1"/>
-<wire x1="29.539" y1="4.064" x2="25.4225" y2="41.3392" width="0" layer="19" extent="1-1"/>
-<wire x1="13.589" y1="22.098" x2="29.539" y2="4.064" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$1">
-<contactref element="U$1" pad="P$2"/>
+<signal name="1-WIRE-H">
 <contactref element="DS2408" pad="4"/>
-<contactref element="R1" pad="1"/>
 <contactref element="TP_I/O" pad="1"/>
-<wire x1="13.5509" y1="18.6563" x2="49.1678" y2="38.3188" width="0" layer="19" extent="1-16"/>
-<wire x1="19.179" y1="4.064" x2="13.5509" y2="18.6563" width="0" layer="19" extent="1-1"/>
-<wire x1="33.0116" y1="8.9934" x2="19.179" y2="4.064" width="0" layer="19" extent="1-1"/>
+<contactref element="R1" pad="1"/>
+<contactref element="1-WIRE-H" pad="P$1"/>
+<wire x1="33.0116" y1="8.9934" x2="49.1678" y2="38.3188" width="0" layer="19" extent="1-16"/>
+<wire x1="13.5509" y1="18.6563" x2="33.0116" y2="8.9934" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.49" y1="-25.613" x2="13.5509" y2="18.6563" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="DS2408" pad="2"/>
@@ -1078,20 +1084,6 @@ design rules under a new name.</description>
 <wire x1="68.745" y1="35.41" x2="79.6938" y2="28.646" width="0" layer="19" extent="1-1"/>
 <wire x1="43.021" y1="38.3188" x2="68.745" y2="35.41" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="N$6">
-<contactref element="DS2408" pad="11"/>
-<contactref element="R8" pad="1"/>
-<contactref element="SW2" pad="COM"/>
-<wire x1="43.021" y1="35.7788" x2="80.3116" y2="34.9286" width="0" layer="19" extent="1-16"/>
-<wire x1="34.542" y1="9.252" x2="43.021" y2="35.7788" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="N$7">
-<contactref element="DS2408" pad="9"/>
-<contactref element="R7" pad="1"/>
-<contactref element="SW1" pad="COM"/>
-<wire x1="43.021" y1="33.2388" x2="52.3406" y2="33.6782" width="0" layer="19" extent="1-16"/>
-<wire x1="19.882" y1="9.252" x2="43.021" y2="33.2388" width="0" layer="19" extent="16-16"/>
-</signal>
 <signal name="N$10">
 <contactref element="OPTO" pad="2"/>
 <contactref element="R12" pad="2"/>
@@ -1103,18 +1095,6 @@ design rules under a new name.</description>
 <wire x1="-5.2654" y1="42.7258" x2="-9.55" y2="34.21" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GND">
-<contactref element="DS2408" pad="5"/>
-<contactref element="U$1" pad="P$1"/>
-<contactref element="TP-" pad="1"/>
-<contactref element="R7" pad="2"/>
-<contactref element="R2" pad="2"/>
-<contactref element="R8" pad="2"/>
-<contactref element="R3" pad="1"/>
-<contactref element="R4" pad="1"/>
-<contactref element="R5" pad="1"/>
-<contactref element="REG" pad="2"/>
-<contactref element="C1" pad="2"/>
-<contactref element="C2" pad="2"/>
 <polygon width="0.1524" layer="1">
 <vertex x="12.7" y="12.701940625"/>
 <vertex x="38.862" y="12.752740625"/>
@@ -1131,17 +1111,6 @@ design rules under a new name.</description>
 <vertex x="38.8366" y="7.5692"/>
 <vertex x="38.8366" y="12.7457"/>
 </polygon>
-<wire x1="78.7876" y1="34.9286" x2="77.733" y2="40.0188" width="0" layer="19" extent="1-1"/>
-<wire x1="81.2178" y1="28.646" x2="78.7876" y2="34.9286" width="0" layer="19" extent="1-1"/>
-<wire x1="35.553" y1="43.446" x2="78.7876" y2="34.9286" width="0" layer="19" extent="1-1"/>
-<wire x1="32.2966" y1="43.4612" x2="35.553" y2="43.446" width="0" layer="19" extent="1-1"/>
-<wire x1="22.3236" y1="42.9968" x2="35.553" y2="43.446" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4225" y1="42.2892" x2="22.3236" y2="42.9968" width="0" layer="19" extent="1-1"/>
-<wire x1="54.0262" y1="43.132" x2="25.4225" y2="42.2892" width="0" layer="19" extent="1-1"/>
-<wire x1="53.8646" y1="33.6782" x2="54.0262" y2="43.132" width="0" layer="19" extent="1-1"/>
-<wire x1="49.1678" y1="37.0488" x2="53.8646" y2="33.6782" width="0" layer="19" extent="1-16"/>
-<wire x1="13.6271" y1="20.4216" x2="49.1678" y2="37.0488" width="0" layer="19" extent="1-16"/>
-<wire x1="16.589" y1="4.064" x2="13.6271" y2="20.4216" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R12" pad="1"/>
@@ -1153,11 +1122,6 @@ design rules under a new name.</description>
 <contactref element="R9" pad="2"/>
 <wire x1="19.8934" y1="9.9622" x2="17.4038" y2="10.301" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$8">
-<contactref element="DS2408" pad="8"/>
-<contactref element="R9" pad="1"/>
-<wire x1="21.4174" y1="9.9622" x2="49.1678" y2="33.2388" width="0" layer="19" extent="1-16"/>
-</signal>
 <signal name="N$13">
 <contactref element="DS2408" pad="12"/>
 <contactref element="R5" pad="2"/>
@@ -1166,29 +1130,11 @@ design rules under a new name.</description>
 <wire x1="43.021" y1="37.0488" x2="52.5022" y2="43.132" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="2.8V">
-<contactref element="REG" pad="5"/>
-<contactref element="R1" pad="2"/>
-<contactref element="DS2408" pad="3"/>
-<contactref element="DS2408" pad="10"/>
-<contactref element="TP+2.8V" pad="1"/>
-<contactref element="LED1" pad="A"/>
 <contactref element="OPTO" pad="1"/>
 <contactref element="SELECTOR" pad="C"/>
-<contactref element="C2" pad="1"/>
-<contactref element="SW2" pad="A"/>
-<contactref element="SW1" pad="A"/>
 <contactref element="SELECTOR" pad="C2"/>
 <wire x1="56.745" y1="37.95" x2="68.745" y2="37.95" width="0" layer="19" extent="1-1"/>
-<wire x1="28.0227" y1="43.2392" x2="56.745" y2="37.95" width="0" layer="19" extent="1-1"/>
-<wire x1="30.7726" y1="43.4612" x2="28.0227" y2="43.2392" width="0" layer="19" extent="1-1"/>
-<wire x1="43.021" y1="34.5088" x2="28.0227" y2="43.2392" width="0" layer="19" extent="1-16"/>
-<wire x1="49.1678" y1="39.5888" x2="43.021" y2="34.5088" width="0" layer="19" extent="16-16"/>
-<wire x1="1.2146" y1="40.1858" x2="49.1678" y2="39.5888" width="0" layer="19" extent="1-16"/>
-<wire x1="13.6144" y1="23.9014" x2="49.1678" y2="39.5888" width="0" layer="19" extent="1-16"/>
-<wire x1="14.4038" y1="10.301" x2="13.6144" y2="23.9014" width="0" layer="19" extent="1-1"/>
-<wire x1="16.834" y1="9.252" x2="14.4038" y2="10.301" width="0" layer="19" extent="1-16"/>
-<wire x1="31.4876" y1="8.9934" x2="16.834" y2="9.252" width="0" layer="19" extent="1-16"/>
-<wire x1="31.494" y1="9.252" x2="31.4876" y2="8.9934" width="0" layer="19" extent="1-16"/>
+<wire x1="1.2146" y1="40.1858" x2="56.745" y2="37.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="X1" pad="3"/>
@@ -1196,6 +1142,113 @@ design rules under a new name.</description>
 <contactref element="OPTO" pad="4"/>
 <wire x1="-9.55" y1="41.71" x2="-5.2654" y2="40.1858" width="0" layer="19" extent="1-16"/>
 <wire x1="-18.4" y1="34.21" x2="-9.55" y2="41.71" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="GND-V">
+<contactref element="U$1" pad="P$1"/>
+<contactref element="GND" pad="P$1"/>
+<contactref element="R7" pad="2"/>
+<contactref element="R8" pad="2"/>
+<wire x1="53.8646" y1="33.6782" x2="78.7876" y2="34.9286" width="0" layer="19" extent="1-1"/>
+<wire x1="16.589" y1="4.064" x2="53.8646" y2="33.6782" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.49" y1="-23.813" x2="16.589" y2="4.064" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VCC-V">
+<contactref element="U$1" pad="P$6"/>
+<contactref element="VCC" pad="P$1"/>
+<wire x1="29.539" y1="4.064" x2="-21.49" y2="-20.213" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="1-WIRE-V">
+<contactref element="U$1" pad="P$2"/>
+<contactref element="1-WIRE" pad="P$1"/>
+<wire x1="19.179" y1="4.064" x2="-21.49" y2="-22.013" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GND-H">
+<contactref element="DS2408" pad="5"/>
+<contactref element="R3" pad="1"/>
+<contactref element="R4" pad="1"/>
+<contactref element="R5" pad="1"/>
+<contactref element="REG" pad="2"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="GND-H" pad="P$1"/>
+<contactref element="R2" pad="2"/>
+<contactref element="TP-" pad="1"/>
+<wire x1="81.2178" y1="28.646" x2="77.733" y2="40.0188" width="0" layer="19" extent="1-1"/>
+<wire x1="54.0262" y1="43.132" x2="77.733" y2="40.0188" width="0" layer="19" extent="1-1"/>
+<wire x1="49.1678" y1="37.0488" x2="54.0262" y2="43.132" width="0" layer="19" extent="1-16"/>
+<wire x1="35.553" y1="43.446" x2="49.1678" y2="37.0488" width="0" layer="19" extent="1-16"/>
+<wire x1="32.2966" y1="43.4612" x2="35.553" y2="43.446" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4225" y1="42.2892" x2="32.2966" y2="43.4612" width="0" layer="19" extent="1-1"/>
+<wire x1="22.3236" y1="42.9968" x2="25.4225" y2="42.2892" width="0" layer="19" extent="1-1"/>
+<wire x1="13.6271" y1="20.4216" x2="22.3236" y2="42.9968" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.49" y1="-27.413" x2="13.6271" y2="20.4216" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="2.8V-H">
+<contactref element="2.8V-H" pad="P$1"/>
+<contactref element="REG" pad="5"/>
+<contactref element="C2" pad="1"/>
+<contactref element="R1" pad="2"/>
+<contactref element="DS2408" pad="3"/>
+<contactref element="DS2408" pad="10"/>
+<contactref element="TP+2.8V" pad="1"/>
+<wire x1="43.021" y1="34.5088" x2="49.1678" y2="39.5888" width="0" layer="19" extent="16-16"/>
+<wire x1="30.7726" y1="43.4612" x2="43.021" y2="34.5088" width="0" layer="19" extent="1-16"/>
+<wire x1="28.0227" y1="43.2392" x2="30.7726" y2="43.4612" width="0" layer="19" extent="1-1"/>
+<wire x1="13.6144" y1="23.9014" x2="28.0227" y2="43.2392" width="0" layer="19" extent="1-1"/>
+<wire x1="31.4876" y1="8.9934" x2="13.6144" y2="23.9014" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.49" y1="-34.613" x2="13.6144" y2="23.9014" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VCC-H">
+<contactref element="VCC-H" pad="P$1"/>
+<contactref element="REG" pad="3"/>
+<contactref element="REG" pad="1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="TP+6V" pad="1"/>
+<wire x1="25.4225" y1="41.3392" x2="25.4225" y2="43.2392" width="0" layer="19" extent="1-1"/>
+<wire x1="20.7996" y1="42.9968" x2="25.4225" y2="43.2392" width="0" layer="19" extent="1-1"/>
+<wire x1="13.589" y1="22.098" x2="20.7996" y2="42.9968" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.49" y1="-36.413" x2="13.589" y2="22.098" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LED-H">
+<contactref element="LED-H" pad="P$1"/>
+<contactref element="DS2408" pad="8"/>
+<wire x1="-21.49" y1="-38.213" x2="49.1678" y2="33.2388" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="2.8V-V">
+<contactref element="2.8V-V" pad="P$1"/>
+<contactref element="SW2" pad="A"/>
+<contactref element="SW1" pad="A"/>
+<contactref element="LED1" pad="A"/>
+<wire x1="14.4038" y1="10.301" x2="-21.49" y2="-40.013" width="0" layer="19" extent="1-1"/>
+<wire x1="16.834" y1="9.252" x2="14.4038" y2="10.301" width="0" layer="19" extent="1-16"/>
+<wire x1="31.494" y1="9.252" x2="16.834" y2="9.252" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="LED-V">
+<contactref element="R9" pad="1"/>
+</signal>
+<signal name="S1-V">
+<contactref element="S1-V" pad="P$1"/>
+<contactref element="R7" pad="1"/>
+<contactref element="SW1" pad="COM"/>
+<wire x1="19.882" y1="9.252" x2="52.3406" y2="33.6782" width="0" layer="19" extent="1-16"/>
+<wire x1="-21.49" y1="-45.413" x2="19.882" y2="9.252" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="S2-V">
+<contactref element="S2-V" pad="P$1"/>
+<contactref element="R8" pad="1"/>
+<contactref element="SW2" pad="COM"/>
+<wire x1="34.542" y1="9.252" x2="80.3116" y2="34.9286" width="0" layer="19" extent="1-16"/>
+<wire x1="-21.49" y1="-47.213" x2="34.542" y2="9.252" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="S1-H">
+<contactref element="S1-H" pad="P$1"/>
+<contactref element="DS2408" pad="9"/>
+<wire x1="-21.49" y1="-41.813" x2="43.021" y2="33.2388" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="S2-H">
+<contactref element="S2-H" pad="P$1"/>
+<contactref element="DS2408" pad="11"/>
+<wire x1="-21.49" y1="-43.613" x2="43.021" y2="35.7788" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
