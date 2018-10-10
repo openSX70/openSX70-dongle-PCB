@@ -10107,7 +10107,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SELECTOR" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="SW-C16" device="" package3d_urn="urn:adsk.eagle:package:26665/1"/>
 <part name="GND-ISO1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND-ISO8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM"/>
+<part name="LED" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM"/>
 <part name="OPTO" library="openSX70" deviceset="TLP127" device="" value="TLP127"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="220R"/>
 <part name="PC-FLASH" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="_PTH"/>
@@ -10185,7 +10185,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND-ISO8" gate="GND" x="193.04" y="58.42" rot="R90">
 <attribute name="VALUE" x="196.215" y="56.515" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED1" gate="G$1" x="91.44" y="35.56" rot="MR270">
+<instance part="LED" gate="G$1" x="91.44" y="35.56" rot="MR270">
 <attribute name="NAME" x="96.012" y="32.004" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="96.012" y="29.845" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -10468,7 +10468,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED" gate="G$1" pin="C"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -10522,7 +10522,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="104.14" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED" gate="G$1" pin="A"/>
 <wire x1="86.36" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
 <label x="86.36" y="38.1" size="1.778" layer="95" rot="R180"/>
 </segment>
