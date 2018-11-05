@@ -11028,8 +11028,10 @@ Datasheet</description>
 <sheets>
 <sheet>
 <plain>
-<text x="165.1" y="10.16" size="6.4516" layer="91">openSX70 dongle</text>
-<text x="244.856" y="-9.398" size="5.08" layer="97">3.3</text>
+<text x="157.48" y="10.16" size="6.4516" layer="95">openSX70 dongle-USB</text>
+<text x="244.856" y="-9.398" size="5.08" layer="97">1.0</text>
+<text x="193.04" y="119.38" size="1.778" layer="91">POWER FROM CAMERA (6V)</text>
+<text x="66.04" y="160.02" size="1.778" layer="91">POWER FROM USB (5V)</text>
 </plain>
 <instances>
 <instance part="DS2408" gate="G$1" x="91.44" y="40.64"/>
