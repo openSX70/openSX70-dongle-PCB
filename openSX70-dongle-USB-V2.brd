@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,11 +47,11 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -177,7 +177,6 @@
 <wire x1="0" y1="45" x2="0" y2="0" width="0" layer="20"/>
 <text x="6.45" y="37.2" size="2.54" layer="21" font="vector" rot="R180">1</text>
 <text x="6.2" y="26.65" size="2.54" layer="21" font="vector" rot="R180">2</text>
-<dimension x1="29" y1="45" x2="29" y2="0" x3="44" y3="22.5" textsize="1.778" layer="1"/>
 <dimension x1="0" y1="45" x2="20" y2="45" x3="10" y3="45" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
@@ -2533,7 +2532,6 @@ design rules under a new name.</description>
 <via x="13.05" y="18.4" extent="1-16" drill="0.35"/>
 <via x="10.85" y="25.95" extent="1-16" drill="0.35"/>
 <via x="13.4" y="25.9" extent="1-16" drill="0.35"/>
-<via x="18.25" y="5.9" extent="1-16" drill="0.35"/>
 <via x="18.35" y="40.5" extent="1-16" drill="0.35"/>
 <via x="16.3" y="5.8" extent="1-16" drill="0.35"/>
 </signal>
@@ -2998,6 +2996,11 @@ design rules under a new name.</description>
 <approved hash="4,1,d36ab85308dba186"/>
 <approved hash="4,16,27bdc1ab176f0575"/>
 <approved hash="4,16,78991a8fb84aae50"/>
+<approved hash="23,1,ae545f945f97ae57"/>
+<approved hash="23,1,f8ff639d65ef7fe1"/>
+<approved hash="23,1,6b7223caf4cb7ee7"/>
+<approved hash="23,1,59e1fb21e72145e1"/>
+<approved hash="23,1,7ae7f1e65ea61deb"/>
 </errors>
 </board>
 </drawing>
