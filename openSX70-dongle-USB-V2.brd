@@ -317,7 +317,7 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
-<library name="SparkFun-Switches" urn="urn:adsk.eagle:library:535">
+<library name="SparkFun-Switches">
 <description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
 In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
 &lt;br&gt;
@@ -332,7 +332,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="SWITCH_SPST_SMD_A" urn="urn:adsk.eagle:footprint:40124/1" library_version="1">
+<package name="SWITCH_SPST_SMD_A">
 <description>&lt;h3&gt;SPDT Slide Switch - SMD&lt;/h3&gt;
 &lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/SLIDE.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -362,38 +362,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.397" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;Value</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="SWITCH_SPST_SMD_A" urn="urn:adsk.eagle:package:40179/1" type="box" library_version="1">
-<description>SPDT Slide Switch - SMD
-Single-pole, double-throw (SPDT) switch.
-Datasheet</description>
-<packageinstances>
-<packageinstance name="SWITCH_SPST_SMD_A"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
 <library name="_openSX70">
 <packages>
-<package name="LED_APHB1608SYKSURKC">
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="1.05" y1="-0.8" x2="-1.05" y2="-0.8" width="0.05" layer="39"/>
-<wire x1="-1.05" y1="-0.8" x2="-1.05" y2="0.8" width="0.05" layer="39"/>
-<wire x1="-1.05" y1="0.8" x2="1.05" y2="0.8" width="0.05" layer="39"/>
-<wire x1="1.05" y1="0.8" x2="1.05" y2="-0.8" width="0.05" layer="39"/>
-<text x="-1.85323125" y="0.90156875" size="0.81421875" layer="31">&gt;NAME</text>
-<text x="-2.003" y="-1.70255" size="0.814021875" layer="27">&gt;VALUE</text>
-<circle x="-1.2" y="0.4" radius="0.02" width="0.2" layer="21"/>
-<wire x1="-0.1" y1="0.4" x2="0.1" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.4" x2="0.1" y2="-0.4" width="0.127" layer="21"/>
-<smd name="4" x="0.6" y="-0.35" dx="0.5" dy="0.4" layer="1" rot="R180"/>
-<smd name="3" x="-0.6" y="-0.35" dx="0.5" dy="0.4" layer="1" rot="R180"/>
-<smd name="2" x="0.6" y="0.35" dx="0.5" dy="0.4" layer="1" rot="R180"/>
-<smd name="1" x="-0.6" y="0.35" dx="0.5" dy="0.4" layer="1" rot="R180"/>
-</package>
 <package name="A6RS-161RS">
 <wire x1="0.2183" y1="9.9241" x2="0.2183" y2="9.9141" width="0.001" layer="21"/>
 <wire x1="0.2183" y1="9.9141" x2="0.2183" y2="0.1241" width="0.001" layer="21"/>
@@ -585,6 +556,18 @@ Datasheet</description>
 <smd name="1" x="8.89" y="-1.397" dx="1" dy="2.7" layer="1" rot="R180"/>
 <wire x1="8.8969" y1="0.4072" x2="8.8969" y2="-3.5685" width="0.001" layer="21"/>
 <smd name="C" x="6.35" y="11.303" dx="1" dy="2.7" layer="1" rot="R180"/>
+</package>
+<package name="LTST-BILED-15X16">
+<wire x1="0.2" y1="0.15" x2="0.7" y2="0.15" width="0.127" layer="21"/>
+<wire x1="0.7" y1="0.15" x2="0.45" y2="-0.15" width="0.127" layer="21"/>
+<wire x1="0.45" y1="-0.15" x2="0.2" y2="0.15" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="0.15" x2="-0.2" y2="0.15" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-0.15" x2="-0.7" y2="0.15" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0.15" x2="-0.45" y2="-0.15" width="0.127" layer="21"/>
+<smd name="P$1" x="0.425" y="0.7758" dx="0.65" dy="0.9516" layer="1"/>
+<smd name="P$2" x="-0.425" y="0.7758" dx="0.65" dy="0.9516" layer="1"/>
+<smd name="P$3" x="0.425" y="-0.7758" dx="0.65" dy="0.9516" layer="1"/>
+<smd name="P$4" x="-0.425" y="-0.7758" dx="0.65" dy="0.9516" layer="1"/>
 </package>
 </packages>
 </library>
@@ -2163,7 +2146,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="4.17" y="6.237140625" size="0.8128" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="7.347140625" y="9.23" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="SWITCH_SPST_SMD_A" package3d_urn="urn:adsk.eagle:package:40179/1" value="" x="4.94" y="43.53" rot="MR0">
+<element name="S1" library="SparkFun-Switches" package="SWITCH_SPST_SMD_A" value="" x="4.94" y="43.53" rot="MR0">
 <attribute name="NAME" x="4.878" y="43.033" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-10651" x="-23" y="-6" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SF_SKU" value="COM-10860" x="-23" y="-6" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2171,10 +2154,6 @@ design rules under a new name.</description>
 </element>
 <element name="SELECTOR" library="_openSX70" package="A6RS-161RS" value="A6RS" x="17.15" y="23.24" rot="R90">
 <attribute name="VALUE" x="24.516" y="18.16" size="1.778" layer="27" ratio="10" rot="R90"/>
-</element>
-<element name="U$1" library="_openSX70" package="LED_APHB1608SYKSURKC" value="DUAL-LED-0603-BIS" x="2.86" y="1.72" rot="R180">
-<attribute name="NAME" x="4.71323125" y="0.81843125" size="0.81421875" layer="31" rot="R180"/>
-<attribute name="VALUE" x="4.863" y="3.42255" size="0.814021875" layer="27" rot="R180"/>
 </element>
 <element name="U1" library="SparkFun" package="SSOP28DB" value="FT232RLSSOP" x="11.25" y="23.71" rot="MR180">
 <attribute name="NAME" x="7.44" y="22.44" size="0.4064" layer="26" rot="MR180"/>
@@ -2184,13 +2163,13 @@ design rules under a new name.</description>
 <attribute name="MPN" value="10118193-0001LF" x="28" y="-18" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="5.14" y="0.415" size="0.889" layer="27" ratio="11" rot="R90"/>
 </element>
-<element name="S2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="SWITCH_SPST_SMD_A" package3d_urn="urn:adsk.eagle:package:40179/1" value="" x="1.5" y="35" rot="R90">
+<element name="S2" library="SparkFun-Switches" package="SWITCH_SPST_SMD_A" value="" x="1.5" y="35" rot="R90">
 <attribute name="NAME" x="1.947" y="35.112" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-10651" x="1.5" y="35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_SKU" value="COM-10860" x="1.5" y="35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="0.103" y="35" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="S3" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="SWITCH_SPST_SMD_A" package3d_urn="urn:adsk.eagle:package:40179/1" value="" x="1.5" y="25" rot="R90">
+<element name="S3" library="SparkFun-Switches" package="SWITCH_SPST_SMD_A" value="" x="1.5" y="25" rot="R90">
 <attribute name="NAME" x="1.897" y="25.012" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-10651" x="1.5" y="25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_SKU" value="COM-10860" x="1.5" y="25" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2210,6 +2189,14 @@ design rules under a new name.</description>
 <attribute name="MPN" value="17-215UYC/S530-A3/TR8" x="4" y="41" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="2.095" y="42.143" size="0.8128" layer="25" font="vector" ratio="11"/>
 <attribute name="VALUE" x="2.303" y="39.3125" size="0.635" layer="27" ratio="10"/>
+</element>
+<element name="U$5" library="_openSX70" package="LTST-BILED-15X16" value="DUOLED-PROPER-LTST-C195KGJRKT" x="2.85" y="1.55" rot="R270">
+<attribute name="AVAILABILITY" value="Unavailable" x="2.85" y="1.55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value=" Green/Red 130° Water Clear 35/25 mcd 2 V 0605 Surface Mount Bi-Color LED " x="2.85" y="1.55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Lite-On Inc." x="2.85" y="1.55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="LTST-C195KGJRKT" x="2.85" y="1.55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PACKAGE" value="0606 Lite-On" x="2.85" y="1.55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="2.85" y="1.55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2628,10 +2615,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="TXLED">
 <contactref element="U1" pad="23"/>
-<contactref element="U$1" pad="2"/>
-<wire x1="2.26" y1="1.37" x2="0.63" y2="1.37" width="0.2032" layer="1"/>
-<wire x1="0.63" y1="1.37" x2="0.3556" y2="1.6444" width="0.2032" layer="1"/>
-<wire x1="0.3556" y1="1.6444" x2="0.3556" y2="16" width="0.2032" layer="1"/>
+<wire x1="0.575" y1="0.975" x2="0.3556" y2="1.1944" width="0.2032" layer="1"/>
+<wire x1="0.3556" y1="1.1944" x2="0.3556" y2="16" width="0.2032" layer="1"/>
 <wire x1="0.3556" y1="16" x2="0.3556" y2="16.3556" width="0.2032" layer="1"/>
 <wire x1="10.275" y1="20.054" x2="10.053" y2="20.276" width="0.2032" layer="16"/>
 <wire x1="10.053" y1="20.276" x2="10.053" y2="20.8577125" width="0.2032" layer="16"/>
@@ -2642,19 +2627,18 @@ design rules under a new name.</description>
 <via x="8.7" y="21.35" extent="1-16" drill="0.35"/>
 <wire x1="8.7" y1="21.35" x2="8.7" y2="20.9377" width="0.2032" layer="1"/>
 <wire x1="8.7" y1="20.9377" x2="8.001" y2="20.2387" width="0.2032" layer="1"/>
-<wire x1="8.001" y1="19.001" x2="8" y2="19" width="0.2032" layer="1"/>
 <wire x1="8.001" y1="20.2387" x2="8.001" y2="19.001" width="0.2032" layer="1"/>
 <wire x1="2.3556" y1="18" x2="0.3556" y2="16" width="0.2032" layer="1"/>
-<wire x1="8" y1="19" x2="7.799" y2="18.799" width="0.2032" layer="1"/>
+<wire x1="8.001" y1="19.001" x2="7.799" y2="18.799" width="0.2032" layer="1"/>
 <wire x1="7.799" y1="18.799" x2="7.799" y2="18.578175" width="0.2032" layer="1"/>
 <wire x1="7.799" y1="18.578175" x2="7.220825" y2="18" width="0.2032" layer="1"/>
 <wire x1="7.220825" y1="18" x2="2.3556" y2="18" width="0.2032" layer="1"/>
+<contactref element="U$5" pad="P$3"/>
+<wire x1="1.9242" y1="0.975" x2="0.575" y2="0.975" width="0.2032" layer="1"/>
+<wire x1="2.0742" y1="1.125" x2="1.9242" y2="0.975" width="0.2032" layer="1"/>
 </signal>
 <signal name="RXLED">
 <contactref element="U1" pad="22"/>
-<contactref element="U$1" pad="4"/>
-<wire x1="2.3114" y1="2.3114" x2="2.3114" y2="2.1336" width="0.2032" layer="1"/>
-<wire x1="3.0226" y1="3.0226" x2="2.3114" y2="2.3114" width="0.2032" layer="1"/>
 <wire x1="3.3782" y1="3.0226" x2="3.0226" y2="3.0226" width="0.2032" layer="16"/>
 <wire x1="5.1562" y1="4.8006" x2="3.3782" y2="3.0226" width="0.2032" layer="16"/>
 <wire x1="5.1562" y1="5.5118" x2="5.1562" y2="4.8006" width="0.2032" layer="1"/>
@@ -2664,11 +2648,13 @@ design rules under a new name.</description>
 <wire x1="7.6454" y1="12.0904" x2="7.6454" y2="11.2014" width="0.2032" layer="1"/>
 <wire x1="11.0236" y1="15.4686" x2="7.6454" y2="12.0904" width="0.2032" layer="16"/>
 <wire x1="11.0236" y1="19.9136" x2="11.0236" y2="15.4686" width="0.2032" layer="16"/>
-<wire x1="2.3114" y1="2.1336" x2="2.26" y2="2.07" width="0.2032" layer="1"/>
 <wire x1="11.0236" y1="19.9136" x2="10.925" y2="20.054" width="0.2032" layer="16"/>
 <via x="3.0226" y="3.0226" extent="1-16" drill="0.35"/>
 <via x="5.1562" y="4.8006" extent="1-16" drill="0.35"/>
 <via x="7.6454" y="12.0904" extent="1-16" drill="0.35"/>
+<contactref element="U$5" pad="P$4"/>
+<wire x1="3.0226" y1="3.0226" x2="3.0226" y2="2.9234" width="0.2032" layer="1"/>
+<wire x1="3.0226" y1="2.9234" x2="2.0742" y2="1.975" width="0.2032" layer="1"/>
 </signal>
 <signal name="TXO">
 <contactref element="U1" pad="1"/>
@@ -2793,27 +2779,6 @@ design rules under a new name.</description>
 <wire x1="5.6896" y1="41.6052" x2="5.69" y2="41.78" width="0.2032" layer="16"/>
 <via x="6.4008" y="37.338" extent="1-16" drill="0.35"/>
 <via x="4.0894" y="39.6494" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$9">
-<contactref element="R6" pad="1"/>
-<contactref element="U$1" pad="1"/>
-<wire x1="3.7338" y1="1.4224" x2="3.556" y2="1.4224" width="0.2032" layer="1"/>
-<wire x1="5.1562" y1="2.8448" x2="3.7338" y2="1.4224" width="0.2032" layer="1"/>
-<wire x1="5.1562" y1="3.556" x2="5.1562" y2="2.8448" width="0.2032" layer="1"/>
-<wire x1="4.6228" y1="4.0894" x2="5.1562" y2="3.556" width="0.2032" layer="1"/>
-<wire x1="2.8448" y1="4.0894" x2="4.6228" y2="4.0894" width="0.2032" layer="1"/>
-<wire x1="1.9558" y1="3.2004" x2="2.8448" y2="4.0894" width="0.2032" layer="1"/>
-<wire x1="3.556" y1="1.4224" x2="3.46" y2="1.37" width="0.2032" layer="1"/>
-<wire x1="1.9558" y1="3.2004" x2="1.94" y2="3.358" width="0.2032" layer="1"/>
-</signal>
-<signal name="N$14">
-<contactref element="R10" pad="1"/>
-<contactref element="U$1" pad="3"/>
-<wire x1="3.556" y1="2.4892" x2="3.556" y2="2.1336" width="0.2032" layer="1"/>
-<wire x1="3.9116" y1="2.8448" x2="3.556" y2="2.4892" width="0.2032" layer="1"/>
-<wire x1="3.9116" y1="3.2004" x2="3.9116" y2="2.8448" width="0.2032" layer="1"/>
-<wire x1="3.556" y1="2.1336" x2="3.46" y2="2.07" width="0.2032" layer="1"/>
-<wire x1="3.9116" y1="3.2004" x2="4.02" y2="3.358" width="0.2032" layer="1"/>
 </signal>
 <signal name="VCC-USB">
 <contactref element="S1" pad="3"/>
@@ -2975,6 +2940,23 @@ design rules under a new name.</description>
 <via x="10.4902" y="28.6258" extent="1-16" drill="0.35"/>
 <via x="5.6896" y="39.2938" extent="1-16" drill="0.35"/>
 </signal>
+<signal name="N$9">
+<contactref element="R10" pad="1"/>
+<contactref element="U$5" pad="P$2"/>
+<wire x1="4.02" y1="3.358" x2="4.02" y2="2.3692" width="0.2032" layer="1"/>
+<wire x1="4.02" y1="2.3692" x2="3.6258" y2="1.975" width="0.2032" layer="1"/>
+</signal>
+<signal name="N$14">
+<contactref element="R6" pad="1"/>
+<contactref element="U$5" pad="P$1"/>
+<wire x1="1.94" y1="3.358" x2="2.208" y2="3.358" width="0.2032" layer="1"/>
+<wire x1="3" y1="4.15" x2="4.7" y2="4.15" width="0.2032" layer="1"/>
+<wire x1="4.7" y1="4.15" x2="5.1" y2="3.75" width="0.2032" layer="1"/>
+<wire x1="5.1" y1="1.1" x2="3.6508" y2="1.1" width="0.2032" layer="1"/>
+<wire x1="3.6508" y1="1.1" x2="3.6258" y2="1.125" width="0.2032" layer="1"/>
+<wire x1="2.208" y1="3.358" x2="3" y2="4.15" width="0.2032" layer="1"/>
+<wire x1="5.1" y1="3.75" x2="5.1" y2="1.1" width="0.2032" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -2996,11 +2978,7 @@ design rules under a new name.</description>
 <approved hash="4,1,d36ab85308dba186"/>
 <approved hash="4,16,27bdc1ab176f0575"/>
 <approved hash="4,16,78991a8fb84aae50"/>
-<approved hash="23,1,ae545f945f97ae57"/>
-<approved hash="23,1,f8ff639d65ef7fe1"/>
-<approved hash="23,1,6b7223caf4cb7ee7"/>
 <approved hash="23,1,59e1fb21e72145e1"/>
-<approved hash="23,1,7ae7f1e65ea61deb"/>
 </errors>
 </board>
 </drawing>
