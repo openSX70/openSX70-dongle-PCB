@@ -878,6 +878,21 @@ LED</description>
 <smd name="VCC-2.8V" x="3.85" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="LED" x="8.99" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 </package>
+<package name="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL">
+<text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
+<smd name="GND" x="-9" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="SWITCH-2" x="-6.43" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="SWITCH-1" x="-1.29" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="VCC-2.8V" x="3.85" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="LED" x="8.99" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+</package>
+<package name="FLASH-8-BRIDGE1-SMALL">
+<text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
+<smd name="GND" x="-9" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="S2" x="-6.43" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="FLASH-5" x="-3.86" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="VCC-6V" x="3.85" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1094,7 +1109,7 @@ design rules under a new name.</description>
 </element>
 <element name="R1" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" package="R0603" package3d_urn="urn:adsk.eagle:package:32791/1" value="4.7K" x="34.2496" y="42.7934" rot="R270">
 <attribute name="MPN" value="RC0603JR-074K7L" x="34.2496" y="42.7934" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="33.7035" y="44.673" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="33.4035" y="43.773" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" value="4.7K" x="31.7096" y="44.0634" size="0.8128" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="R12" library="Seeed-Resistor" library_urn="urn:adsk.eagle:library:474" package="R0603" package3d_urn="urn:adsk.eagle:package:32791/1" value="220R" x="3.6968" y="42.8808" rot="R180">
@@ -1146,11 +1161,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="14.4144" y="44.2014" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP-" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="SMD1,27-2,54" package3d_urn="urn:adsk.eagle:package:30839/1" value="" x="21.7271" y="44.1216" rot="R90">
-<attribute name="NAME" x="24.2414" y="45.8235" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="22.7414" y="43.1235" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="21.7271" y="44.1216" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP_I/O" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="SMD1,27-2,54" package3d_urn="urn:adsk.eagle:package:30839/1" value="" x="28.2509" y="44.1563" rot="R90">
-<attribute name="NAME" x="30.943" y="45.6931" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="30.043" y="43.1931" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="28.2509" y="44.1563" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="REG" library="openSX70" package="SOT-23-5" value="NCP4688" x="1.6226" y="33.7892" rot="R270">
@@ -1158,7 +1173,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="0.3526" y="31.2492" size="0.6096" layer="27" font="vector" ratio="11"/>
 </element>
 <element name="TP+6V" library="wirepad" library_urn="urn:adsk.eagle:library:412" package="SMD1,27-2,54" package3d_urn="urn:adsk.eagle:package:30839/1" value="" x="17.889" y="44.198" rot="R90">
-<attribute name="NAME" x="20.3906" y="45.8364" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="19.2906" y="43.0364" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="17.889" y="44.198" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="C1" library="Seeed-Capacitor" library_urn="urn:adsk.eagle:library:464" package="C0603" package3d_urn="urn:adsk.eagle:package:32378/1" value="1uf" x="-2.8616" y="33.3032" rot="R270">
@@ -1197,6 +1212,12 @@ design rules under a new name.</description>
 </element>
 <element name="U$3" library="_openSX70" package="FLASH-8-BRIDGE-SW1-SW2-LED" value="FLASH-BRIDGE-SW1-SW2-LED" x="24.8" y="31.2">
 <attribute name="NAME" x="14.64" y="35.01" size="1.778" layer="21" font="vector"/>
+</element>
+<element name="U$1" library="_openSX70" package="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL" value="FLASH-BRIDGE-SW1-SW2-LED-SMALL" x="26.2" y="15.7">
+<attribute name="NAME" x="7.54" y="23.21" size="1.778" layer="21" font="vector"/>
+</element>
+<element name="U$4" library="_openSX70" package="FLASH-8-BRIDGE1-SMALL" value="FLASH-BRIDGE-SMALL" x="-6.9" y="-1.8">
+<attribute name="NAME" x="-17.06" y="2.01" size="1.778" layer="21" font="vector"/>
 </element>
 </elements>
 <signals>

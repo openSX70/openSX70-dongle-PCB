@@ -1212,6 +1212,21 @@ Used in manufacturing several products at SparkFun.
 <smd name="VCC-2.8V" x="3.85" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="LED" x="8.99" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 </package>
+<package name="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL">
+<text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
+<smd name="GND" x="-9" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="SWITCH-2" x="-6.43" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="SWITCH-1" x="-1.29" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="VCC-2.8V" x="3.85" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="LED" x="8.99" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+</package>
+<package name="FLASH-8-BRIDGE1-SMALL">
+<text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
+<smd name="GND" x="-9" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="S2" x="-6.43" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="FLASH-5" x="-3.86" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+<smd name="VCC-6V" x="3.85" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SW_4POS">
@@ -1366,6 +1381,43 @@ Used in manufacturing several products at SparkFun.
 </device>
 </devices>
 </deviceset>
+<deviceset name="FLASH-BRIDGE-SW1-SW2-LED-SMALL">
+<gates>
+<gate name="G$1" symbol="SX70-FLASH-BRIDGE2" x="55.88" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="LED" pad="LED"/>
+<connect gate="G$1" pin="SWITCH-1" pad="SWITCH-1"/>
+<connect gate="G$1" pin="SWITCH-2" pad="SWITCH-2"/>
+<connect gate="G$1" pin="VCC-2.8V" pad="VCC-2.8V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLASH-BRIDGE-SMALL">
+<gates>
+<gate name="G$1" symbol="SX70-FLASH-BRIDGE1" x="55.88" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="FLASH-8-BRIDGE1-SMALL">
+<connects>
+<connect gate="G$1" pin="F-5" pad="FLASH-5"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
+<connect gate="G$1" pin="VCC" pad="VCC-6V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1408,6 +1460,8 @@ Used in manufacturing several products at SparkFun.
 <part name="X1" library="_openSX70" deviceset="JACK-SMD-SJ-3523-SMT-TR" device=""/>
 <part name="U$2" library="_openSX70" deviceset="FLASH-BRIDGE1" device=""/>
 <part name="U$3" library="_openSX70" deviceset="FLASH-BRIDGE-SW1-SW2-LED" device=""/>
+<part name="U$1" library="_openSX70" deviceset="FLASH-BRIDGE-SW1-SW2-LED-SMALL" device=""/>
+<part name="U$4" library="_openSX70" deviceset="FLASH-BRIDGE-SMALL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1510,6 +1564,8 @@ Used in manufacturing several products at SparkFun.
 </instance>
 <instance part="U$2" gate="G$1" x="86.36" y="55.88"/>
 <instance part="U$3" gate="G$1" x="83.82" y="12.7"/>
+<instance part="U$1" gate="G$1" x="83.82" y="114.3"/>
+<instance part="U$4" gate="G$1" x="86.36" y="93.98"/>
 </instances>
 <busses>
 </busses>
