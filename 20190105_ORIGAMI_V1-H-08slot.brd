@@ -3,7 +3,7 @@
 <eagle version="9.2.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="mil" altunit="mm"/>
@@ -170,6 +170,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjc0YWI4" projecturn="a.cGVyc29uYWw6dWUyYjc0YWI4IzIwMTcwNzE4ODQ1NjQxNTE" f3durn="urn:adsk.wipprod:dm.lineage:AoAC12g0SkmPLSMk-iGgLg" pcbguid="edb3502e-7c8f-4c82-9d71-33b41b792465" lastpulledtime="" lastsyncedchangeguid="dac62d5c-c7c7-73c4-919d-cd9f57cf9c74"/>
 <plain>
 <text x="53.024" y="11.4764" size="1.27" layer="21" font="vector" rot="R180">20190106_ORIGAMI_V1.1-0.9mm</text>
 <wire x1="1.5631" y1="13.3928" x2="92.5481" y2="13.3928" width="0.001" layer="20"/>
@@ -368,78 +369,8 @@ OUT</text>
 <text x="41.4" y="-1.9" size="0.8128" layer="25" font="vector">all vias tented please</text>
 </plain>
 <libraries>
-<library name="DS2408-joaco">
-<packages>
-<package name="SO16">
-<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
-<wire x1="4.699" y1="1.9558" x2="-4.699" y2="1.9558" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-1.9558" x2="5.08" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.08" y1="1.5748" x2="-4.699" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.699" y1="1.9558" x2="5.08" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-5.08" y1="-1.5748" x2="-4.699" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.699" y1="-1.9558" x2="4.699" y2="-1.9558" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-1.5748" x2="5.08" y2="1.5748" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.5748" x2="-5.08" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.508" x2="-5.08" y2="-1.5748" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-5.08" y1="-1.6002" x2="5.08" y2="-1.6002" width="0.0508" layer="21"/>
-<smd name="1" x="-4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="16" x="-4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="2" x="-3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="3" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="15" x="-3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="14" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="4" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="13" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="5" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="12" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="6" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="7" x="3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="11" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="10" x="3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.461" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
-<rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
-<rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
-<rectangle x1="-2.159" y1="-3.0734" x2="-1.651" y2="-1.9304" layer="51"/>
-<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
-<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
-<rectangle x1="-3.429" y1="1.9558" x2="-2.921" y2="3.0988" layer="51"/>
-<rectangle x1="-4.699" y1="1.9558" x2="-4.191" y2="3.0988" layer="51"/>
-<rectangle x1="0.381" y1="-3.0988" x2="0.889" y2="-1.9558" layer="51"/>
-<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
-<rectangle x1="2.921" y1="-3.0988" x2="3.429" y2="-1.9558" layer="51"/>
-<rectangle x1="4.191" y1="-3.0988" x2="4.699" y2="-1.9558" layer="51"/>
-<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
-<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
-<rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
-<rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="openSX70">
 <packages>
-<package name="SO-4">
-<wire x1="-2.0849" y1="-2.4384" x2="2.0849" y2="-2.4384" width="0.2032" layer="21"/>
-<wire x1="2.0849" y1="-2.4384" x2="2.0849" y2="1.1684" width="0.2032" layer="21"/>
-<wire x1="2.0849" y1="1.1684" x2="-2.0849" y2="1.1684" width="0.2032" layer="21"/>
-<wire x1="-2.0849" y1="1.1684" x2="-2.0849" y2="-2.4384" width="0.2032" layer="21"/>
-<circle x="-1.285" y="0.354" radius="0.3349" width="0.1016" layer="21"/>
-<smd name="1" x="-3.24" y="0.635" dx="1" dy="0.6" layer="1"/>
-<smd name="2" x="-3.24" y="-1.905" dx="1" dy="0.6" layer="1"/>
-<smd name="3" x="3.24" y="-1.905" dx="1" dy="0.6" layer="1" rot="R180"/>
-<smd name="4" x="3.24" y="0.635" dx="1" dy="0.6" layer="1" rot="R180"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-3.471" y1="0.4445" x2="-2.15" y2="0.8255" layer="51"/>
-<rectangle x1="-3.471" y1="-2.0955" x2="-2.15" y2="-1.7145" layer="51"/>
-<rectangle x1="2.15" y1="-2.0955" x2="3.471" y2="-1.7145" layer="51" rot="R180"/>
-<rectangle x1="2.15" y1="0.4445" x2="3.471" y2="0.8255" layer="51" rot="R180"/>
-</package>
 <package name="SOT-23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="1.45" y1="0.8104" x2="1.45" y2="-0.8104" width="0.1524" layer="21"/>
@@ -591,9 +522,9 @@ LED</description>
 </package3d>
 </packages3d>
 </library>
-<library name="_openSX70">
+<library name="_openSX70" urn="urn:adsk.eagle:library:7902803">
 <packages>
-<package name="A6RS-161RS">
+<package name="A6RS-161RS" urn="urn:adsk.eagle:footprint:7902886/1" library_version="1" library_locally_modified="yes">
 <wire x1="0.2183" y1="9.9241" x2="0.2183" y2="9.9141" width="0.001" layer="21"/>
 <wire x1="0.2183" y1="9.9141" x2="0.2183" y2="0.1241" width="0.001" layer="21"/>
 <wire x1="0.2183" y1="0.1241" x2="1.0333" y2="0.1241" width="0.001" layer="21"/>
@@ -777,15 +708,15 @@ LED</description>
 <wire x1="6.8569" y1="12.6058" x2="5.8569" y2="12.6058" width="0.001" layer="21"/>
 <wire x1="5.8569" y1="9.9058" x2="5.8569" y2="12.6058" width="0.001" layer="21"/>
 <wire x1="6.8569" y1="9.9058" x2="6.8569" y2="12.6058" width="0.001" layer="21"/>
-<smd name="8" x="1.27" y="-1.397" dx="1" dy="2.7" layer="1" rot="R180"/>
 <wire x1="1.2769" y1="0.4072" x2="1.2769" y2="-3.5585" width="0.001" layer="21"/>
+<wire x1="8.8969" y1="0.4072" x2="8.8969" y2="-3.5685" width="0.001" layer="21"/>
+<smd name="8" x="1.27" y="-1.397" dx="1" dy="2.7" layer="1" rot="R180"/>
 <smd name="4" x="3.81" y="-1.397" dx="1" dy="2.7" layer="1" rot="R180"/>
 <smd name="2" x="6.35" y="-1.397" dx="1" dy="2.7" layer="1" rot="R180"/>
 <smd name="1" x="8.89" y="-1.397" dx="1" dy="2.7" layer="1" rot="R180"/>
-<wire x1="8.8969" y1="0.4072" x2="8.8969" y2="-3.5685" width="0.001" layer="21"/>
 <smd name="C" x="6.35" y="11.303" dx="1" dy="2.7" layer="1" rot="R180"/>
 </package>
-<package name="CUI_SJ-3523-SMT-TR">
+<package name="CUI_SJ-3523-SMT-TR" urn="urn:adsk.eagle:footprint:7902887/1" library_version="1" library_locally_modified="yes">
 <wire x1="-3.5" y1="-3" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-2.5" x2="-3.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="2.5" x2="-3.5" y2="3" width="0.127" layer="21"/>
@@ -801,10 +732,6 @@ LED</description>
 <wire x1="-3.75" y1="5.35" x2="11.25" y2="5.35" width="0.05" layer="39"/>
 <wire x1="11.25" y1="5.35" x2="11.25" y2="-5.35" width="0.05" layer="39"/>
 <wire x1="11.25" y1="-5.35" x2="-3.75" y2="-5.35" width="0.05" layer="39"/>
-<text x="-3.105690625" y="5.309740625" size="1.27233125" layer="25">&gt;NAME</text>
-<text x="-3.20573125" y="-6.61181875" size="1.27228125" layer="27">&gt;VALUE</text>
-<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="21"/>
-<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="51"/>
 <wire x1="9.9" y1="-3" x2="11" y2="-3" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="2.5" x2="-6" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-6" y1="2.5" x2="-6" y2="-2.5" width="0.127" layer="21"/>
@@ -817,20 +744,24 @@ LED</description>
 <wire x1="-6.25" y1="2.75" x2="-6.25" y2="-2.75" width="0.05" layer="39"/>
 <wire x1="-6.25" y1="-2.75" x2="-3.75" y2="-2.75" width="0.05" layer="39"/>
 <wire x1="-3.75" y1="-2.75" x2="-3.75" y2="-5.35" width="0.05" layer="39"/>
+<text x="-3.105690625" y="5.309740625" size="1.27233125" layer="25">&gt;NAME</text>
+<text x="-3.20573125" y="-6.61181875" size="1.27228125" layer="27">&gt;VALUE</text>
+<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="51"/>
 <hole x="0" y="0" drill="1.7"/>
+<hole x="7" y="0" drill="1.7"/>
 <smd name="3" x="0.9" y="3.7" dx="2.2" dy="2.8" layer="1"/>
 <smd name="1" x="-1.1" y="-3.7" dx="2.2" dy="2.8" layer="1"/>
 <smd name="2" x="8.3" y="-3.7" dx="2.8" dy="2.8" layer="1"/>
-<hole x="7" y="0" drill="1.7"/>
 </package>
-<package name="FLASH-8-BRIDGE1">
+<package name="FLASH-8-BRIDGE1" urn="urn:adsk.eagle:footprint:7902890/1" library_version="1" library_locally_modified="yes">
 <text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
 <smd name="GND" x="-9" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="S2" x="-6.43" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="FLASH-5" x="-3.86" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="VCC-6V" x="3.85" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 </package>
-<package name="FLASH-8-BRIDGE-SW1-SW2-LED">
+<package name="FLASH-8-BRIDGE-SW1-SW2-LED" urn="urn:adsk.eagle:footprint:7902891/1" library_version="1" library_locally_modified="yes">
 <text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
 <smd name="GND" x="-9" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="SWITCH-2" x="-6.43" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
@@ -838,7 +769,106 @@ LED</description>
 <smd name="VCC-2.8V" x="3.85" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 <smd name="LED" x="6.42" y="7.5" dx="2.159" dy="2.54" layer="1" rot="R180"/>
 </package>
+<package name="SO-4" urn="urn:adsk.eagle:footprint:7902866/1" library_version="1" library_locally_modified="yes">
+<wire x1="-2.0849" y1="-2.4384" x2="2.0849" y2="-2.4384" width="0.2032" layer="21"/>
+<wire x1="2.0849" y1="-2.4384" x2="2.0849" y2="1.1684" width="0.2032" layer="21"/>
+<wire x1="2.0849" y1="1.1684" x2="-2.0849" y2="1.1684" width="0.2032" layer="21"/>
+<wire x1="-2.0849" y1="1.1684" x2="-2.0849" y2="-2.4384" width="0.2032" layer="21"/>
+<circle x="-1.285" y="0.354" radius="0.3349" width="0.1016" layer="21"/>
+<smd name="1" x="-3.24" y="0.635" dx="1" dy="0.6" layer="1"/>
+<smd name="2" x="-3.24" y="-1.905" dx="1" dy="0.6" layer="1"/>
+<smd name="3" x="3.24" y="-1.905" dx="1" dy="0.6" layer="1" rot="R180"/>
+<smd name="4" x="3.24" y="0.635" dx="1" dy="0.6" layer="1" rot="R180"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.471" y1="0.4445" x2="-2.15" y2="0.8255" layer="51"/>
+<rectangle x1="-3.471" y1="-2.0955" x2="-2.15" y2="-1.7145" layer="51"/>
+<rectangle x1="2.15" y1="-2.0955" x2="3.471" y2="-1.7145" layer="51" rot="R180"/>
+<rectangle x1="2.15" y1="0.4445" x2="3.471" y2="0.8255" layer="51" rot="R180"/>
+</package>
+<package name="SO16" urn="urn:adsk.eagle:footprint:7902841/1" library_version="1" library_locally_modified="yes">
+<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
+<wire x1="4.699" y1="1.9558" x2="-4.699" y2="1.9558" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-1.9558" x2="5.08" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="1.5748" x2="-4.699" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.699" y1="1.9558" x2="5.08" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-5.08" y1="-1.5748" x2="-4.699" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.699" y1="-1.9558" x2="4.699" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.5748" x2="5.08" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.5748" x2="-5.08" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.508" x2="-5.08" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-5.08" y1="-1.6002" x2="5.08" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="-4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="-3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.461" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
+<rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0734" x2="-1.651" y2="-1.9304" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+<rectangle x1="-3.429" y1="1.9558" x2="-2.921" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="1.9558" x2="-4.191" y2="3.0988" layer="51"/>
+<rectangle x1="0.381" y1="-3.0988" x2="0.889" y2="-1.9558" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="2.921" y1="-3.0988" x2="3.429" y2="-1.9558" layer="51"/>
+<rectangle x1="4.191" y1="-3.0988" x2="4.699" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
+<rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="A6RS-161RS" urn="urn:adsk.eagle:package:7902943/4" type="model" library_version="1" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="A6RS-161RS"/>
+</packageinstances>
+</package3d>
+<package3d name="CUI_SJ-3523-SMT-TR" urn="urn:adsk.eagle:package:7902944/3" type="model" library_version="1" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="CUI_SJ-3523-SMT-TR"/>
+</packageinstances>
+</package3d>
+<package3d name="FLASH-8-BRIDGE1" urn="urn:adsk.eagle:package:7902947/1" type="box" library_version="1" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="FLASH-8-BRIDGE1"/>
+</packageinstances>
+</package3d>
+<package3d name="FLASH-8-BRIDGE-SW1-SW2-LED" urn="urn:adsk.eagle:package:7902948/1" type="box" library_version="1" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="FLASH-8-BRIDGE-SW1-SW2-LED"/>
+</packageinstances>
+</package3d>
+<package3d name="SO-4" urn="urn:adsk.eagle:package:7902924/3" type="model" library_version="1" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SO-4"/>
+</packageinstances>
+</package3d>
+<package3d name="SO16" urn="urn:adsk.eagle:package:7902916/2" type="model" library_version="1" library_locally_modified="yes">
+<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
+<packageinstances>
+<packageinstance name="SO16"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -1039,7 +1069,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="DS2408" library="DS2408-joaco" package="SO16" value="DS2408" x="68.7944" y="6.7162" rot="R90">
+<element name="DS2408" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" package="SO16" package3d_urn="urn:adsk.eagle:package:7902916/2" value="DS2408" x="68.7944" y="6.7162" rot="R90">
 <attribute name="NAME" x="69.1404" y="8.3482" size="0.8128" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="69.4294" y="2.6522" size="0.8128" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
@@ -1048,7 +1078,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="DIO-09909" x="7.8038" y="1.801" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="Yellow" x="9.7088" y="0.15" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="OPTO" library="openSX70" package="SO-4" value="TLP127" x="21.1746" y="10.2208" rot="R180">
+<element name="OPTO" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" package="SO-4" package3d_urn="urn:adsk.eagle:package:7902924/3" value="TLP127" x="21.1746" y="10.2208" rot="R180">
 <attribute name="NAME" x="22.4446" y="11.4908" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="23.0796" y="14.6658" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -1097,7 +1127,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="58.3843" y="3.1672" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" value="220R" x="59.0031" y="3.1322" size="1.27" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="SELECTOR" library="_openSX70" package="A6RS-161RS" value="SELECTOR-4-1-SMD-A6RS" x="88.75" y="1.785" rot="R90">
+<element name="SELECTOR" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" package="A6RS-161RS" package3d_urn="urn:adsk.eagle:package:7902943/4" value="SELECTOR-4-1-SMD-A6RS" x="88.75" y="1.785" rot="R90">
 <attribute name="NAME" x="91.3535" y="8.008" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="96.116" y="-3.295" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
@@ -1123,7 +1153,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="31.214" y="2.3198" size="0.8128" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" value="1uf" x="30.0396" y="1.2262" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="X1" library="_openSX70" package="CUI_SJ-3523-SMT-TR" value="JACK-SMD-SJ-3523-SMT-TR" x="4.76" y="6.9">
+<element name="X1" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" package="CUI_SJ-3523-SMT-TR" package3d_urn="urn:adsk.eagle:package:7902944/3" value="JACK-SMD-SJ-3523-SMT-TR" x="4.76" y="6.9">
 <attribute name="AVAILABILITY" value="Unavailable" x="4.76" y="6.9" size="1.778" layer="27" display="off"/>
 <attribute name="CUI_PURCHASE_URL" value="https://www.cui.com/product/interconnect/audio-connectors/3.5-mm-jacks/sj-352x-smt-series?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="4.76" y="6.9" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" SJ Series 3.5 mm 12 V SMT Right Angle Stereo Audio Jack " x="4.76" y="6.9" size="1.778" layer="27" display="off"/>
@@ -1134,8 +1164,8 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="4.76" y="6.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="11.11" y="-3.26" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$2" library="_openSX70" package="FLASH-8-BRIDGE1" value="FLASH-BRIDGE1" x="47.2" y="-3.9"/>
-<element name="U$1" library="_openSX70" package="FLASH-8-BRIDGE-SW1-SW2-LED" value="FLASH-BRIDGE-SW1-SW2-LED" x="47.2" y="-0.3"/>
+<element name="U$2" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" package="FLASH-8-BRIDGE1" package3d_urn="urn:adsk.eagle:package:7902947/1" value="FLASH-BRIDGE1" x="47.2" y="-3.9"/>
+<element name="U$1" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" package="FLASH-8-BRIDGE-SW1-SW2-LED" package3d_urn="urn:adsk.eagle:package:7902948/1" value="FLASH-BRIDGE-SW1-SW2-LED" x="47.2" y="-0.3"/>
 </elements>
 <signals>
 <signal name="1-WIRE">
@@ -1737,6 +1767,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
