@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-01-06T21:42:54Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "openSX70-dongle_v4-push"
+        },
+        "Owner": "Joaquin De Prada <joaco@deprada.net>",
+        "Size": {
+            "X": 47.117,
+            "Y": 25.0444
+        }
+    }
+}
