@@ -221,9 +221,9 @@
 <smd name="P$1" x="-2.5" y="-3.61" dx="2.2" dy="1.2" layer="1" rot="R90"/>
 <smd name="P$2" x="0" y="-3.61" dx="2.2" dy="1.2" layer="1" rot="R90"/>
 <smd name="P$3" x="2.5" y="-3.61" dx="2.2" dy="1.2" layer="1" rot="R90"/>
-<hole x="-3.4" y="-0.735" drill="0.35"/>
-<hole x="3.4" y="-0.735" drill="0.35"/>
-<polygon width="0.127" layer="21">
+<hole x="-3.4" y="-0.735" drill="0.9"/>
+<hole x="3.4" y="-0.735" drill="0.9"/>
+<polygon width="0.127" layer="21" spacing="1.778" pour="hatch">
 <vertex x="-4.55" y="1.015"/>
 <vertex x="-4.55" y="-2.06"/>
 <vertex x="4.55" y="-2.06"/>
