@@ -175,7 +175,7 @@
 <text x="29.4031" y="10.241" size="1.1" layer="1" font="vector" ratio="12" rot="R180">top</text>
 <text x="16.9312" y="13.0808" size="1.1" layer="16" font="vector" ratio="12" rot="MR180">bottom</text>
 <text x="25.3075" y="4.845" size="1.1" layer="16" font="vector" ratio="12" rot="MR0">openSX70 origami dongle</text>
-<text x="7.676" y="3.3764" size="1.016" layer="22" font="vector" rot="MR180">20190108_ORIGAMI_V3</text>
+<text x="7.676" y="3.3764" size="1.016" layer="22" font="vector" rot="MR180">20190110_ORIGAMI_V3</text>
 <text x="6.2131" y="9.693" size="0.6096" layer="25" font="vector">GND</text>
 <text x="8.8785" y="9.7295" size="0.6096" layer="25" font="vector">1-W</text>
 <text x="23.9855" y="11.45275" size="1.27" layer="26" font="vector" rot="MR0">S2</text>
