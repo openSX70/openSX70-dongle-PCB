@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -229,9 +229,8 @@ DIN A4, landscape with extra doc field</description>
 </library>
 <library name="_openSX70" urn="urn:adsk.eagle:library:7902803">
 <packages>
-<package name="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL" urn="urn:adsk.eagle:footprint:7902893/1" library_version="1" library_locally_modified="yes">
+<package name="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL-NO-GND" library_version="1" library_locally_modified="yes">
 <text x="-10.16" y="3.81" size="1.778" layer="21" font="vector">&gt;NAME</text>
-<smd name="GND" x="-8.3904" y="5.1378" dx="1.016" dy="0.8" layer="1" rot="R180"/>
 <smd name="SWITCH-2" x="-6.43" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
 <smd name="SWITCH-1" x="-1.29" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
 <smd name="VCC-2.8V" x="3.85" y="4.96" dx="2.159" dy="1.143" layer="1" rot="R180"/>
@@ -264,11 +263,6 @@ DIN A4, landscape with extra doc field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL" urn="urn:adsk.eagle:package:7902950/1" type="box" library_version="1" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL"/>
-</packageinstances>
-</package3d>
 <package3d name="SX70-FLASH-EDGE8-2" urn="urn:adsk.eagle:package:7902946/1" type="box" library_version="1" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="SX70-FLASH-EDGE8-2"/>
@@ -276,12 +270,11 @@ DIN A4, landscape with extra doc field</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="SX70-FLASH-BRIDGE2" urn="urn:adsk.eagle:symbol:7902836/1" library_version="1" library_locally_modified="yes">
+<symbol name="SX70-FLASH-BRIDGE3" library_version="1" library_locally_modified="yes">
 <wire x1="-20.32" y1="7.62" x2="-20.32" y2="-5.08" width="0.6096" layer="94"/>
 <wire x1="-20.32" y1="-5.08" x2="20.32" y2="-5.08" width="0.6096" layer="94"/>
 <wire x1="20.32" y1="-5.08" x2="20.32" y2="7.62" width="0.6096" layer="94"/>
 <wire x1="20.32" y1="7.62" x2="-20.32" y2="7.62" width="0.6096" layer="94"/>
-<pin name="GND" x="-17.78" y="10.16" length="middle" rot="R270"/>
 <pin name="SWITCH-2" x="-12.7" y="10.16" length="middle" rot="R270"/>
 <pin name="SWITCH-1" x="-2.54" y="10.16" length="middle" rot="R270"/>
 <pin name="VCC-2.8V" x="7.62" y="10.16" length="middle" rot="R270"/>
@@ -315,22 +308,18 @@ DIN A4, landscape with extra doc field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FLASH-BRIDGE-SW1-SW2-LED-SMALL" urn="urn:adsk.eagle:component:7902999/1" library_version="1" library_locally_modified="yes">
+<deviceset name="FLASH-BRIDGE-SW1-SW2-LED-SMALL-NO-GND" library_version="1" library_locally_modified="yes">
 <gates>
-<gate name="G$1" symbol="SX70-FLASH-BRIDGE2" x="55.88" y="-7.62"/>
+<gate name="G$1" symbol="SX70-FLASH-BRIDGE3" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL">
+<device name="" package="FLASH-8-BRIDGE-SW1-SW2-LED-SMALL-NO-GND">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="LED" pad="LED"/>
 <connect gate="G$1" pin="SWITCH-1" pad="SWITCH-1"/>
 <connect gate="G$1" pin="SWITCH-2" pad="SWITCH-2"/>
 <connect gate="G$1" pin="VCC-2.8V" pad="VCC-2.8V"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7902950/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2311,7 +2300,7 @@ Source: www.kingbright.com</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
 <part name="SW1" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" deviceset="K3-1280S-SHORT" device="SMALL" value="MK-12C02 G1.5"/>
 <part name="SW2" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" deviceset="K3-1280S-SHORT" device="SMALL" value="MK-12C02 G1.5"/>
-<part name="U$1" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" deviceset="FLASH-BRIDGE-SW1-SW2-LED-SMALL" device="" package3d_urn="urn:adsk.eagle:package:7902950/1"/>
+<part name="U$1" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" deviceset="FLASH-BRIDGE-SW1-SW2-LED-SMALL-NO-GND" device=""/>
 <part name="U$2" library="_openSX70" library_urn="urn:adsk.eagle:library:7902803" deviceset="SX70-FLASH-EDGE8-MALE-LONG" device="" package3d_urn="urn:adsk.eagle:package:7902946/1"/>
 <part name="LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
 </parts>
@@ -2322,21 +2311,21 @@ Source: www.kingbright.com</description>
 <text x="194.056" y="-6.858" size="5.08" layer="97">5.2 ORIGAMI</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="-7.62" y="-15.24"/>
-<instance part="FRAME1" gate="G$2" x="154.94" y="-15.24">
+<instance part="FRAME1" gate="G$1" x="-7.62" y="-15.24" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="154.94" y="-15.24" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="167.64" y="-13.97" size="2.54" layer="94"/>
 <attribute name="SHEET" x="241.3" y="-13.97" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="172.72" y="3.81" size="2.54" layer="94"/>
 </instance>
-<instance part="SW1" gate="G$1" x="187.96" y="78.74" rot="R180">
+<instance part="SW1" gate="G$1" x="187.96" y="78.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="195.58" y="85.09" size="1.27" layer="95" ratio="10" rot="R270"/>
 </instance>
-<instance part="SW2" gate="G$1" x="187.96" y="101.6" rot="R180">
+<instance part="SW2" gate="G$1" x="187.96" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="195.58" y="107.95" size="1.27" layer="95" ratio="10" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="109.22" y="78.74" rot="R270"/>
-<instance part="U$2" gate="G$1" x="109.22" y="33.02" rot="R270"/>
-<instance part="LED" gate="G$1" x="129.54" y="60.96" rot="R270">
+<instance part="U$1" gate="G$1" x="109.22" y="78.74" smashed="yes" rot="R270"/>
+<instance part="U$2" gate="G$1" x="109.22" y="33.02" smashed="yes" rot="R270"/>
+<instance part="LED" gate="G$1" x="129.54" y="60.96" smashed="yes" rot="R270">
 <attribute name="NAME" x="124.968" y="57.404" size="1.778" layer="95"/>
 <attribute name="VALUE" x="124.968" y="55.245" size="1.778" layer="96"/>
 </instance>
@@ -2369,9 +2358,6 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="137.16" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="119.38" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="96.52" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
