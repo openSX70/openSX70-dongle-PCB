@@ -1,0 +1,14 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"";
+"2";"";"SMD2";"SMD1,27-2,54";"TP+2.8V, TP_I/O";"SMD PAD";"";
+"6";"100K";"SMD-RES-100K-1%-1/10W(0603)";"R0603";"R2, R3, R4, R5, R7, R8";"301010196";"";
+"2";"1uf";"CERAMIC-1UF-25V-10%-X7R(0603)";"C0603";"C1, C2";"302010139";"";
+"2";"220R";"SMD-RES-220R-5%-1/10W(0603)";"R0603";"R9, R12";"301010163";"";
+"1";"4.7K";"SMD-RES-4.7K-5%-1/10W(0603)";"R0603";"R1";"301010290";"";
+"1";"DS2408";"DS2408";"SO16";"DS2408";"";"";
+"1";"FLASH-BRIDGE-SW1-SW2-LED";"FLASH-BRIDGE-SW1-SW2-LED";"FLASH-8-BRIDGE-SW1-SW2-LED";"U$1";"";"";
+"1";"FLASH-BRIDGE1";"FLASH-BRIDGE1";"FLASH-8-BRIDGE1";"U$2";"";"";
+"1";"JACK-SMD-SJ-3523-SMT-TR";"JACK-SMD-SJ-3523-SMT-TR";"CUI_SJ-3523-SMT-TR";"X1";"Audio Jack Connector 3.5 mm Low Profile Surface Mount Stereo Jack, 3 Pin Right-Angle";"";
+"1";"NCP4688";"NCP4688";"SOT-23-5";"REG";"";"";
+"1";"SELECTOR-4-1-SMD-A6RS-PROPER";"SELECTOR-4-1-SMD-A6RS-PROPER";"A6RS-161RS";"SELECTOR";"";"";
+"1";"TLP127";"TLP127";"SO-4";"OPTO";"";"";
+"1";"Yellow";"LED-YELLOWLILYPAD";"LED-1206";"LED1";"Yellow SMD LED";"";
