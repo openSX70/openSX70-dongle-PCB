@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-07-15T16:41:10Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "openSX70-dongle_v6-2-dual-led"
+        },
+        "Owner": "Joaquin De Prada <joaco@deprada.net>",
+        "Size": {
+            "X": 40.64,
+            "Y": 30.48
+        }
+    }
+}
